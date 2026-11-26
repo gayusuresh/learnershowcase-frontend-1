@@ -1,0 +1,16 @@
+.panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:14px}
+.panel.narrow{max-width:380px;margin:auto}
+.panel label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.9rem}
+.panel input:not([type=checkbox]),.panel textarea,.panel select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px}
+.panel input[type=checkbox]{width:20px;height:20px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.bar button.on,button.primary{background:var(--brand,#1D4ED8);color:#fff;border-color:var(--brand,#1D4ED8)}
+.editor{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:16px;background:var(--bg);border-radius:8px}
+.editor .wide{grid-column:1/-1}
+.rows{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.rows li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}
+.rows .acts{display:flex;gap:6px}
+.st{margin-left:8px;font-style:normal;font-size:.8rem;padding:2px 8px;border-radius:999px;background:var(--bg)}
+.st.pending{background:#FFF1CC}.st.published{background:#D9F2E3}
+.err{color:#B03A33;margin:0}
+.ph{width:48px;height:48px;border-radius:50%;object-fit:cover;margin-bottom:6px}

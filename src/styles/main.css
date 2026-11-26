@@ -1,0 +1,27 @@
+:root{--bg:#EEF4FC;--ink:#0B2A5B;--mute:#4A6485;--card:#fff;--line:#CFDDF0;--brand:#1D4ED8;--kerala:#0E7C86;--tamil-nadu:#1D4ED8;--telugu:#6D4AC9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Instrument Sans",system-ui,sans-serif}
+h1,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+.top{padding:48px 24px 0;max-width:1100px;margin:auto}
+.top h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:18ch;letter-spacing:-.02em}
+nav{display:flex;gap:4px;margin-top:28px;border-bottom:1px solid var(--line);overflow-x:auto}
+nav a{padding:10px 16px;color:var(--mute);text-decoration:none;font-weight:600;border-bottom:3px solid transparent;white-space:nowrap}
+nav a.active{color:var(--ink);border-color:var(--ink)}
+main{max-width:1100px;margin:auto;padding:24px}
+.filters{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;margin-bottom:24px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+button,select{font:inherit;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);cursor:pointer}
+.chips button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.chips button[data-region].on{background:var(--c);border-color:var(--c)}
+[data-region=kerala]{--c:var(--kerala)}[data-region=tamil-nadu]{--c:var(--tamil-nadu)}[data-region=telugu]{--c:var(--telugu)}
+:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.tag{color:var(--c);font-weight:600;font-size:.85rem}
+.card h3{font-size:1.3rem}.card p,.card ul{margin:0}.card ul{padding-left:18px}
+.stack{color:var(--mute);font-size:.9rem}
+blockquote{margin:0;font-family:"Bricolage Grotesque",sans-serif;font-size:1.2rem;line-height:1.35}
+.links{display:flex;gap:14px;flex-wrap:wrap}.links a{color:var(--brand);font-weight:600}
+.card footer{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);display:flex;flex-direction:column;font-size:.9rem}
+.card footer span{color:var(--mute)}
+.note{color:var(--mute);padding:40px 0}
